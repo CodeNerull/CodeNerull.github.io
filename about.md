@@ -1,11 +1,14 @@
 ---
 layout: page
-title: About
+title: 个人简介
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# 个人信息
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+- 曹孟强/男/1992
+- 河北工业职业技术学院/计算机系 
+- 工作年限：2年
+- 技术博客：[http://codenerull.github.io][blog_url]
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[blog_url]:http://codenerull.github.io
