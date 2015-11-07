@@ -3,6 +3,7 @@ layout: post
 title:  "第一篇Jekyll!"
 date:   2015-11-04 00:34:00
 categories: essays
+tags: [essays]
 ---
 这是我的第一篇Jekyll，用一句程序猿最多的话语问候"Hello World"
 

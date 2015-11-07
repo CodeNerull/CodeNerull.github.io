@@ -1,0 +1,24 @@
+---
+layout: page
+title: 标签
+---
+
+<ul>
+{% for tags in site.tags %}
+<li >{{ tags[0] | join: "/" }}{{ tags[1] | size }}</li>
+{% endfor %}
+</ul>
+
+{% for tags in site.tags %}
+    <h2 >{{ tags[0] | join: "/" }}</h2>
+    <ul>
+        {% assign pages_list = tags[1] %}
+        {% for node in pages_list %}
+            {% if page.url == node.url %}
+                <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a><span>{{node.date|date_to_string}}</span></li>
+            {% else %}
+                <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a><span>{{node.date|date_to_string}}</span></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endfor %}

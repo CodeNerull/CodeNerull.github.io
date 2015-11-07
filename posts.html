@@ -1,0 +1,15 @@
+---
+layout: page
+title: 文章列表
+---
+{% for node in site.posts %}
+    {% if node.title != null %}
+        {% if group == null or group == node.group %}
+            {% if page.url == node.url %}
+                <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a><span>{{node.date|date_to_string}}</span></li>
+            {% else %}
+                <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a><span>{{node.date|date_to_string}}</span></li>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
