@@ -7,6 +7,8 @@ url: "http://codenerull.github.io" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  CodeNerull
 ASSET_PATH : "/assets"
+sass:
+  sass_dir: "/assets/_sass"
 
 # Build settings
 markdown: kramdown
