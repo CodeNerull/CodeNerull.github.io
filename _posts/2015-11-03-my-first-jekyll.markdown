@@ -7,7 +7,7 @@ tags: [essays]
 ---
 这是我的第一篇Jekyll，用一句程序猿最多的话语问候"Hello World"
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def print_hi(name)
   puts "Hello, #{name}"
 end
